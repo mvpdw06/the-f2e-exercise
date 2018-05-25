@@ -1,0 +1,36 @@
+{
+  "name": "the-f2e-exercise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/mvpdw06/the-f2e-exercise.git",
+    "type": "git"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --history-api-fallback --open --hot",
+    "build": "webpack --mode production",
+    "clean": "rimraf dist/*",
+    "format": "prettier --single-quote --no-semi --write './src/**/*.js'",
+    "deploy": "npm run clean && npm run build && gh-pages -d dist"
+  },
+  "author": "RyanHsu <mvpdw06@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "gh-pages": "^1.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.12.1",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.21.0",
+    "vue": "^2.5.16",
+    "vue-loader": "^15.2.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4",
+    "whatwg-fetch": "^2.0.4"
+  }
+}
